@@ -1,2 +1,20 @@
-# FlightsData
-Udacity Capstone Project analyzing domestic flight data for the United States
+# Udacity Capstone Project analyzing domestic flight data for the United States
+I was tasked with selecting a dataset to conduct exploratory and explanatory analysis.  I used univariate, bivariate and multi-variate models, with various visual types, to dig into the data.
+#### I explored a dataset collected by the U.S. Department of Transportation's (DOT) Bureau of Transportation Statistics (BTS) on all domestic flights. The particular data sets I chose are from 1988 and 2008 and contains 29 separate variables. I want to see how much has changed, or possibly stayed the same after 20 years, regarding flying. Also, 2008 is the most recent data available and will be the most accurate when comparing to today's data.
+### Univariate Explorations
+- Arrival delay in the 1988 and 2008 dataset has an extremely high range of values, most of them are from about -60 to about 240 minutes. Negative value means the plane arrived earlier than scheduled. The mode for both datasets show the distribution right around 0 minutes, which makes sense. 
+- Both histograms are very similar; however, it looks as if the 2008 data shows that planes are on average arriving roughly 5 to 10 minutes early, based on expected arrival time. We are seeing basically the same depiction when looking at the Departure Delay Distribution from 1988 & 2008.
+### Bivariate Explorations
+#### Is there any correlations between length of flight and the length of the delay?¶
+- It's interesting when comparing the length of the flight to the length of the delay. I would assume that longer delays would be associated with longer flights; however, the plots below show no such relation. 
+- It's also possible that the sample size of shorter flights causes the plots to skew to the right, when in fact there is just many more shorter flights, as opposed to 2,500km + flights.
+#### Does the distance of trip show any variability when looking at the delays by type?¶
+- These plots supports the fact which was revealed in the last section. Even if I break these delays down into 4 factors, these do not show the clear relationship with distance.
+### Multivariate Explorations
+#### How does each delay type look when breaking the length of departure delay into segments?¶
+- This is very interesting; Carrier Delay and Weather delay weren't the most commom of the delays. However, as the length of the delays increases, the more likely it is to be a carrier or weather delay.
+### Exploration Summary
+- I had some assumptions going into my exploration of the flights data and I was quite surprised on a number of them. After comparing the 1988 and 2008 datasets at the initial part of my exploration, I decided for dig deeper into the 2008 dataset, as they were both very similar. Probably the biggest thing that surprised me, despite how often you hear about delays at the airport, is that flights in 2008 on average are departing and arriving a few minutes early.
+- Another aspect of the analysis that surprised me was how little weather delays affected the total data set. I am from Michigan so I'm accustomed to weather delaying things during the winter months; however, Weather Delays only accounted for 1.5% of all delays in the 2008 data set.
+- Going in, I just assumed that a longer flight meant the delays could be quite extensive; however, I found that to be quite the opposite. The highest average of delay times come from flights less than 750km. There are many factors that can go into causing a delay. It's possible that airlines have just failed to attack this problem due to a lack of demand to correct it. Perhaps consumers aren't as concerned about leaving a few minutes late when their total flight time is only two hours. This if of course just one perspective when looking at this specific analysis.
+- In summary, despite huge technological advances in the world, many things about air travel have remained the same. I'd be interested to dig into a 2019 flight dataset; however, 2008 was the last one available on the RITA website. Safety is the main concern for air travel; if we're able to average arriving a few minutes early, I'd consider that a huge success.
